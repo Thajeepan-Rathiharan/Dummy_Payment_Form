@@ -13,6 +13,14 @@
             <input type="text" id="name" placeholder="Name" required />
             <input type="email" id="email" placeholder="Email" required />
             <input type="number" id="amount" placeholder="Amount" required />
+            <select id="currency" required>
+                <!-- Adding currency options. -->
+                <option value="">Select Currency</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+            </select>
             <button type="submit">Pay Now</button>
         </form>
         <div id="response"></div>

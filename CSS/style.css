@@ -18,8 +18,27 @@ input {
     border-radius: 5px;
 }
 
+/* Currency dropdown */
+.amount-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#amount {
+    flex: 1; /* Allow the amount input to take most of the space */
+    margin-right: 10px; /* Space between amount and currency dropdown */
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Pay button */
 button {
     width: 100%;
+    margin-top: 10px;
     padding: 10px;
     background-color: #28a745;
     color: white;
