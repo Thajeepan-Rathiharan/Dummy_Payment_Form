@@ -10,21 +10,23 @@
     <div class="container">
         <h1>Create User and Make Payment</h1>
         <form id="payment-form">
-            <input type="text" id="name" placeholder="Name" required />
-            <input type="email" id="email" placeholder="Email" required />
-            <input type="number" id="amount" placeholder="Amount" required />
-            <select id="currency" required>
-                <!-- Adding currency options. -->
-                <option value="">Select Currency</option>
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-                <option value="GBP">GBP</option>
-                <option value="JPY">JPY</option>
-            </select>
+            <input type="text" id="recipient" placeholder="Recipient Name or Email" required />
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <div class="amount-container">
+                <input type="number" id="amount" placeholder="Amount" required />
+                <select id="currency" required>
+                    <option value="">Select Currency</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </div>
             <button type="submit">Pay Now</button>
         </form>
-        <div id="response"></div>
+        <div id="response" class="response-message"></div>
     </div>
-    <script src="JS/.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
