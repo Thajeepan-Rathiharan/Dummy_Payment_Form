@@ -2,6 +2,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Centering the title */
+h1{
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     max-width: 400px;
     margin: auto;
